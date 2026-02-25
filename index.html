@@ -23,20 +23,23 @@
    <section class="card">
   <h2>What is CI/CD?</h2>
   <p>
-   CI/CD is a modern software development practice that automates code integration and deployment.
-   Instead of manually checking every line of code, Continuous Integration automatically catches mistakes the moment they’re made.
-    Then, Continuous Deployment takes the stress out of updates by smoothly delivering them to your users.
-   It turns the chaotic "launch day" into a quiet, reliable process, giving developers more time to create and less time to fix broken things.
+   CI/CD is a modern software development practice that automates the process of integrating and deploying code.
+  Instead of manually reviewing every change, Continuous Integration automatically tests and checks the code whenever it is updated.
+  Continuous Deployment then ensures that successful changes are delivered to users quickly and smoothly.
+  Rather than relying on stressful, large release days, updates happen gradually and reliably.
+  This approach improves software quality, reduces errors, and allows developers to focus more on building new features 
+    instead of fixing unexpected problems.
   </p>
 </section>
 
 <section class="card">
   <h2>My Pipeline</h2>
   <p>
-    When I push my code to the main branch, GitHub Actions automatically starts.
-    It checks if all required files exist, then uploads the website files.
-    After that, the workflow deploys the site to GitHub Pages.
-    Finally, the website becomes live and updated automatically.
+In my project, the pipeline is automatically triggered whenever I push changes to the main branch.
+GitHub Actions starts by checking out the repository and verifying that all required files,such as index.html, style.css, and script.js, exist.
+If the checks pass successfully, the workflow uploads the website files as an artifact for deployment.
+In the next stage, the deployment job publishes the website to GitHub Pages.
+As a result, every change I make is automatically tested and deployed, ensuring a reliable and fully automated update process.
   </p>
 </section>
     <section class="card center">
