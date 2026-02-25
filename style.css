@@ -3,8 +3,8 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #f7f8fc;
-  color: #2d2d2d;
+  background-color: #3a3a3a;
+  color: #d17b88;
 }
 
 .container {
@@ -24,7 +24,7 @@ h1 {
 }
 
 .subtitle {
-  color: #8b8fa3;
+  color: #d17b88;
   font-size: 15px;
 }
 
@@ -36,13 +36,13 @@ h1 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 12px;
-  color: #6c63ff;
+  color: #d17b88;
 }
 
 .card p {
   font-size: 15px;
   line-height: 1.7;
-  color: #555;
+  color: #6c63ff;
 }
 
 button {
@@ -52,7 +52,7 @@ button {
   padding: 8px 16px;
   font-size: 14px;
   border-radius: 20px;
-  color: #6c63ff;
+  color: #d17b88;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -71,5 +71,5 @@ button:hover {
 footer {
   margin-top: 60px;
   font-size: 13px;
-  color: #9aa0b5;
+  color: #d17b88;
 }
