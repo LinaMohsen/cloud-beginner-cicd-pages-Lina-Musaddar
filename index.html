@@ -1,75 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud CI/CD Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f7f8fc;
-  color: #2d2d2d;
-}
+  <div class="container">
 
-.container {
-  max-width: 750px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
+    <header>
+      <h1>Cloud CI/CD Project</h1>
+      <p class="subtitle">Simple • Clean • Automated Deployment</p>
+    </header>
 
-header {
-  margin-bottom: 50px;
-}
+    <section class="card">
+      <h2>Student Information</h2>
+      <p><strong>Name:</strong> Lina Al Musaddar</p>
+      <p><strong>Course:</strong> Cloud Computing</p>
+    </section>
 
-h1 {
-  font-size: 34px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
+    <section class="card">
+      <h2>What is CI/CD?</h2>
+      <p>
+        CI/CD is a modern software development practice that automates the process of integrating and deploying code.
+        Instead of manually reviewing every change, Continuous Integration automatically tests and checks the code whenever it is updated.
+        Continuous Deployment then ensures that successful changes are delivered to users quickly and smoothly.
+        Rather than relying on stressful, large release days, updates happen gradually and reliably.
+        This approach improves software quality, reduces errors, and allows developers to focus more on building new features instead of fixing unexpected problems.
+      </p>
+    </section>
 
-.subtitle {
-  color: #8b8fa3;
-  font-size: 15px;
-}
+    <section class="card">
+      <h2>My Pipeline</h2>
+      <p>
+        In my project, the pipeline is automatically triggered whenever I push changes to the main branch.
+        GitHub Actions starts by checking out the repository and verifying that all required files, such as index.html, style.css, and script.js, exist.
+        If the checks pass successfully, the workflow uploads the website files as an artifact for deployment.
+        In the next stage, the deployment job publishes the website to GitHub Pages.
+        As a result, every change I make is automatically tested and deployed, ensuring a reliable and fully automated update process.
+      </p>
+    </section>
 
-.card {
-  margin-bottom: 40px;
-}
+    <section class="card">
+      <button id="btn">Test JavaScript</button>
+      <p id="msg">Click the button to see interaction.</p>
+    </section>
 
-.card h2 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 12px;
-  color: #6c63ff;
-}
+    <footer>
+      <p>Powered by GitHub Actions & GitHub Pages</p>
+    </footer>
 
-.card p {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #555;
-}
+  </div>
 
-button {
-  margin-top: 15px;
-  background: none;
-  border: 1.5px solid #6c63ff;
-  padding: 8px 16px;
-  font-size: 14px;
-  border-radius: 20px;
-  color: #6c63ff;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
+  <script src="script.js"></script>
 
-button:hover {
-  background-color: #6c63ff;
-  color: white;
-}
-
-#msg {
-  margin-top: 12px;
-  font-size: 14px;
-  color: #444;
-}
-
-footer {
-  margin-top: 60px;
-  font-size: 13px;
-  color: #9aa0b5;
-}
+</body>
+</html>
