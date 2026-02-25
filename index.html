@@ -1,45 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cloud CI/CD Assignment</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="container">
-    <h1>Cloud CI/CD Project</h1>
-
-    <div class="card">
-      <p><strong>Name:</strong> Lina Al Musaddar</p>
-      <p><strong>Course:</strong> Cloud Computing</p>
-    </div>
-
-    <div class="card">
-      <h2>What is CI/CD?</h2>
-      <p>
-        CI/CD stands for Continuous Integration and Continuous Deployment.
-        Continuous Integration automatically checks and tests code after every push.
-        Continuous Deployment automatically releases the updated version to users.
-        This process improves software quality and speeds up development.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>My Pipeline</h2>
-      <p>
-        When I push code to the main branch, GitHub Actions starts automatically.
-        It checks that all required files exist.
-        Then it uploads the website files and deploys them to GitHub Pages.
-        Finally, the website updates automatically.
-      </p>
-    </div>
-
-    <div class="card center">
-      <button id="btn">Click to Test JavaScript</button>
-      <p id="msg"></p>
-    </div>
+  <div class="bg-shapes">
+    <span class="shape s1"></span>
+    <span class="shape s2"></span>
+    <span class="shape s3"></span>
   </div>
+
+  <main class="container">
+    <header class="hero">
+      <div>
+        <h1>Cloud CI/CD Project</h1>
+        <p class="subtitle">A calm pastel design + automated deployment with GitHub Actions.</p>
+      </div>
+
+      <div class="badge">
+        <div class="dot"></div>
+        <span>Auto-deploy on <b>main</b></span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Student Info</h2>
+        <p><b>Name:</b> Lina Al Musaddar</p>
+        <p><b>Course:</b> Cloud Computing</p>
+        <p class="hint">Tip: You can mention this in your video intro.</p>
+      </article>
+
+      <article class="card">
+        <h2>What is CI/CD?</h2>
+       <p>
+   CI/CD is like having a digital safety net for your team. Instead of manually checking every line of code, 
+   Continuous Integration automatically catches mistakes the moment they’re made. Then, 
+   Continuous Deployment takes the stress out of updates by smoothly delivering them to your users.
+   It turns the chaotic "launch day" into a quiet, reliable process,
+   giving developers more time to create and less time to fix broken things.
+  </p>
+      </article>
+
+      <article class="card">
+        <h2>My Pipeline</h2>
+      
+  <h2>My Pipeline</h2>
+  <p>
+    When I push my code to the main branch, GitHub Actions automatically starts.
+    It checks if all required files exist, then uploads the website files.
+    After that, the workflow deploys the site to GitHub Pages.
+    Finally, the website becomes live and updated automatically.
+  </p>
+      </article>
+
+      <article class="card interactive">
+        <h2>JavaScript Interaction</h2>
+        <p>Click the button to test the interactive feature:</p>
+
+        <button id="btn" class="btn">
+          <span class="btn-icon">✨</span>
+          Click to Test JavaScript
+        </button>
+
+        <p id="msg" class="msg">Waiting for your click…</p>
+
+        <div class="mini">
+          <div class="pill">HTML</div>
+          <div class="pill">CSS</div>
+          <div class="pill">JavaScript</div>
+          <div class="pill">GitHub Actions</div>
+          <div class="pill">GitHub Pages</div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>Live updates: Commit → Workflow Run → GitHub Pages ✅</p>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
 
   <script src="script.js"></script>
 </body>
